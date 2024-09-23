@@ -6,6 +6,10 @@ public class Desalan_IT20 {
         //Declaring String Array
         String[] name = {"Ahrdy", "Jane", "Desalan"};
 
+        //Displaying values in the Array
+        System.out.println("First Name: " + name[0]);
+        System.out.println("Second Name: " + name[1]);
+        System.out.println("Last Name: " + name[2]);
     }
 
 }
