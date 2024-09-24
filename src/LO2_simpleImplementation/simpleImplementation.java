@@ -7,6 +7,8 @@ public class simpleImplementation {
         //Declaaring string arrays
         String[] Names = {"Ahrdy", "Violet", "Purple"};
 
+        //Displaying String array
+        System.out.println(Names.length);
     }
 
 }
