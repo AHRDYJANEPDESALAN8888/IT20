@@ -7,6 +7,11 @@ public class displayviaforloop {
         //Declaaring string arrays
         String[] Names = {"Ahrdy", "Violet", "Purple"};
 
+        //displaying via for loop
+        for (int i = 0; i < Names.length; i++) {
+
+            System.out.println(Names[i]);
+        }
     }
 
 }
