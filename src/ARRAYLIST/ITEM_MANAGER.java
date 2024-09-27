@@ -1,9 +1,14 @@
 package ARRAYLIST;
 
+import java.util.ArrayList;
+
 public class ITEM_MANAGER {
 
-    public static void main(String[] args) {
+    private ArrayList<String> items;
 
+    //Constructor to initialize the ArrayList
+    public ITEM_MANAGER() {
+        items = new ArrayList<>();
     }
 
 }
