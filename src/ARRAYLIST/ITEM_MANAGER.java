@@ -11,4 +11,8 @@ public class ITEM_MANAGER {
         items = new ArrayList<>();
     }
 
+    //Method to display items
+    public void displayItems() {
+        System.out.println("Items in the list: " + items);
+    }
 }
