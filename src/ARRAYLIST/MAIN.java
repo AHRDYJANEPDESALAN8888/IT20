@@ -42,6 +42,11 @@ public class MAIN {
         list.displayItems();
         System.out.println("-----------------------------");
 
+        //To delete the item in the list by entering its index
+        System.out.println("Enter an index number to delete: ");
+        int newIndex = sc.nextInt();
+        list.deleteItem(newIndex);
+        list.displayItems();
+        sc.close();
     }
-
 }

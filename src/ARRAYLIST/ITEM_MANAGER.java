@@ -44,4 +44,14 @@ public class ITEM_MANAGER {
         }
         return index;
     }
+
+    //Method to delete one item in the Arraylist
+    public void deleteItem(int index) {
+        if (index >= 0 && index < items.size()) {
+            String removedItem = items.remove(index);
+            System.out.println("You have successfully deleted the item: " + removedItem);
+        } else {
+            System.out.println("Index out of bounds");
+        }
+    }
 }
