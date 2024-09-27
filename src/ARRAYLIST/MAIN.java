@@ -24,6 +24,17 @@ public class MAIN {
         //inputs will be added to the arraylist
         list.addItems(item1, item2, item3);
         System.out.println("-----------------------------");
+
+        //inputs to update one value
+        System.out.println("Enter an index number that you want to change: ");
+        index = sc.nextInt();
+        sc.nextLine();
+        System.out.println("Enter a new item name that you want to change on that index number: ");
+        newItem = sc.nextLine();
+        list.updateItem(index, newItem);
+        list.displayItems();
+        System.out.println("-----------------------------");
+
     }
 
 }
