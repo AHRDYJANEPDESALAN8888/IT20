@@ -33,4 +33,15 @@ public class ITEM_MANAGER {
             System.out.println("Index out of bounds");
         }
     }
+
+    //Method to find item in the ArrayList
+    public int findItem(String finditem) {
+        int index = items.indexOf(finditem);
+        if (index != -1) {
+            System.out.println("Found: " + finditem + " at index " + index);
+        } else {
+            System.out.println(finditem + " not found.");
+        }
+        return index;
+    }
 }
