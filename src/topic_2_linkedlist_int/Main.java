@@ -13,8 +13,13 @@ public class Main {
         list.add(50);
         System.out.println("Current Linked List:");
         list.printList();
-        
-      
+
+        //Delete
+        System.out.println();
+        System.out.println("Deleting 40 from the list...");
+        System.out.println("Current Linked List:");
+        list.deleteByValue(20);
+        list.printList();
 
     }
 
