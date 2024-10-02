@@ -10,7 +10,7 @@ public class Linkedlist {
         if (head == null) {
             head = newNode;
             return;
-        }
+        } 
         Node current = head;
         while (current.next != null) {
             current = current.next;
