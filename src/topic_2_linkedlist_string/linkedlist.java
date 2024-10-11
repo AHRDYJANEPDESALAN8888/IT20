@@ -1,16 +1,12 @@
 package topic_2_linkedlist_string;
 
-import java.util.Scanner;
 
 public class linkedlist {
 
     private node head;
-    private final Scanner scanner;
+ 
 
-    public linkedlist() {
-        scanner = new Scanner(System.in);
-    }
-
+  
     // Method to add a new node at the end of the list
     public void add(String data) {
         node newnode = new node(data);

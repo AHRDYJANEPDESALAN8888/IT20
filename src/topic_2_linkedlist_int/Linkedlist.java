@@ -1,7 +1,5 @@
 package topic_2_linkedlist_int;
 
-import java.util.Scanner;
-
 public class Linkedlist {
 
     private Node head;
