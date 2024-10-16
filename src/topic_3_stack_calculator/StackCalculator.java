@@ -64,6 +64,24 @@ public class StackCalculator extends JFrame implements ActionListener {
         add(buttonPanel, BorderLayout.CENTER);
     }
 
+    private void addButton(JPanel panel, String label) {
+        JButton button = new JButton(label);
+        button.setFont(new Font("Arial", Font.BOLD, 16));
+        button.addActionListener(this);
+        panel.add(button);
+    }
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        String command = e.getActionCommand();
+        if (Character.isDigit(command.charAt(0))) {
+            stack.push(Integer.parseInt(command));
+            displayStack();
+        } else {
+            performOperation(command);
+        }
+    }
+
     public static void main(String[] args) {
         // TODO code application logic here
     }
