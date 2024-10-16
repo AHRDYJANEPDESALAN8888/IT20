@@ -125,6 +125,10 @@ public class StackCalculator extends JFrame implements ActionListener {
 
     public static void main(String[] args) {
         // TODO code application logic here
+        SwingUtilities.invokeLater(() -> {
+            StackCalculator calculator = new StackCalculator();
+            calculator.setVisible(true);
+        });
     }
 
 }
