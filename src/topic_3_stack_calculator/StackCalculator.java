@@ -47,6 +47,23 @@ public class StackCalculator extends JFrame implements ActionListener {
         add(scrollPane, BorderLayout.NORTH);
     }
 
+    private void setupButtons() {
+        JPanel buttonPanel = new JPanel(new GridLayout(4, 3, 10, 10));
+        buttonPanel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
+
+        for (int i = 1; i <= 9; i++) {
+            addButton(buttonPanel, String.valueOf(i));
+        }
+        addButton(buttonPanel, "0");
+
+        addButton(buttonPanel, "+");
+        addButton(buttonPanel, "-");
+        addButton(buttonPanel, "*");
+        addButton(buttonPanel, "/");
+
+        add(buttonPanel, BorderLayout.CENTER);
+    }
+
     public static void main(String[] args) {
         // TODO code application logic here
     }
