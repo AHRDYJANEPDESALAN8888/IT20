@@ -10,15 +10,26 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.Stack;
+
 /**
  *
  * @author HP
  */
-public class StackCalculator extends JFrame implements ActionListener{
+public class StackCalculator extends JFrame implements ActionListener {
 
     /**
      * @param args the command line arguments
      */
+    private Stack<Integer> stack;
+    private JTextArea display;
+
+    public StackCalculator() {
+        stack = new Stack<>();
+        setupFrame();
+        setupDisplay();
+        setupButtons();
+    }
+
     public static void main(String[] args) {
         // TODO code application logic here
     }
