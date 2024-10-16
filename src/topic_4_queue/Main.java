@@ -5,6 +5,8 @@
  */
 package topic_4_queue;
 
+import java.util.Scanner;
+
 /**
  *
  * @author HP
@@ -16,6 +18,12 @@ public class Main {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+
+        Scanner sc = new Scanner(System.in);
+        Queue q = new Queue();
+
+        System.out.println("Welcome to Simple Queue Program!");
+        System.out.println();
     }
 
 }
