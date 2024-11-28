@@ -29,6 +29,7 @@ public class MergeSort {
         mergeSort(right);
         merge(arr, left, right);
     }
+
     private static void merge(int[] arr, int[] left, int[] right) {
         int i = 0, j = 0, k = 0;
         while (i < left.length && j < right.length) {
@@ -46,8 +47,14 @@ public class MergeSort {
         }
     }
 
-    
-    public static void main (String []args) {
-        
+    public static void printArray(int[] arr) {
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+        System.out.println();
+    }
+
+    public static void main(String[] args) {
+
     }
 }
