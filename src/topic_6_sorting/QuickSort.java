@@ -5,13 +5,24 @@
  */
 package topic_6_sorting;
 
+import java.util.Scanner;
+
 /**
  *
  * @author HP
  */
 public class QuickSort {
-    
-    public static void main (String []args) {
-        
+
+    public static void quickSort(int[] arr, int low, int high) {
+        if (low < high) {
+            int pi = partition(arr, low, high);
+
+            quickSort(arr, low, pi - 1);
+            quickSort(arr, pi + 1, high);
+        }
+    }
+
+    public static void main(String[] args) {
+
     }
 }
