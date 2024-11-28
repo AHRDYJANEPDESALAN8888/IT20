@@ -34,7 +34,27 @@ public class BubbleSort {
         System.out.println();
     }
     
-    public static void main (String []args) {
-        
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the number of elements in the array: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+        System.out.println("Original array:");
+        printArray(arr);
+        long startTime = System.currentTimeMillis();
+        bubbleSort(arr);
+        long endTime = System.currentTimeMillis();
+        long timeTaken = endTime - startTime;
+
+        System.out.println("Sorted array:");
+        printArray(arr);
+        System.out.println("Sorting completed in: " + timeTaken + " milliseconds");
+        scanner.close();
     }
 }
+   
