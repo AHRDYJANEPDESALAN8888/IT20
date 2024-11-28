@@ -41,7 +41,8 @@ public class QuickSort {
 
         return i + 1;
     }
-     public static void printArray(int[] arr) {
+
+    public static void printArray(int[] arr) {
         for (int i : arr) {
             System.out.print(i + " ");
         }
@@ -49,6 +50,31 @@ public class QuickSort {
     }
 
     public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Enter the number of elements in the array: ");
+        int n = scanner.nextInt();
+        int[] arr = new int[n];
+
+        System.out.println("Enter the elements of the array:");
+        for (int i = 0; i < n; i++) {
+            arr[i] = scanner.nextInt();
+        }
+
+        System.out.println("Original array:");
+        printArray(arr);
+
+        long startTime = System.currentTimeMillis();
+        quickSort(arr, 0, arr.length - 1);
+        long endTime = System.currentTimeMillis();
+        long timeTaken = endTime - startTime;
+
+        System.out.println("Sorted array:");
+        printArray(arr);
+
+        System.out.println("Sorting completed in: " + timeTaken + " milliseconds");
+
+        scanner.close();
     }
+
 }
